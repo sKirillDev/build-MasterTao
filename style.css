@@ -1,0 +1,226 @@
+/*
+Theme Name: CustomTheme
+Theme URI: https://wordpress.org/themes/CustomTheme/
+Author: the Rost team
+Author URI: http://rost.com.ua/
+Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CustomTheme
+Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.logo {
+  max-width: 172px;
+}
+
+.navbar {
+  padding: 37px 0 27px;
+}
+
+.navbar-nav {
+  max-width: 618px;
+}
+
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #E58D35;
+}
+
+.hamburger {
+  padding: 5px 7px;
+}
+.hamburger:focus {
+  box-shadow: none;
+}
+
+.hamburger-box {
+  width: 27px;
+  height: 25px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+  width: 27px;
+  height: 2px;
+}
+
+.swiper-banner {
+  width: 100%;
+  max-width: 1820px;
+}
+.swiper-banner .swiper-slide {
+  min-height: 700px;
+  background-color: #363A4D;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+}
+.swiper-banner .swiper-slide .container {
+  padding-top: 163px;
+  padding-bottom: 73px;
+}
+.swiper-banner .swiper-pagination-bullet {
+  border: 2px solid #fff;
+  border-radius: 90px;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  opacity: 1;
+}
+.swiper-banner .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.swiper-banner .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-banner .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+}
+.swiper-banner .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: calc(100% - 59px);
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.26;
+  text-transform: uppercase;
+  max-width: 515px;
+  margin-bottom: 8px;
+}
+
+.banner-description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.36;
+  max-width: 320px;
+  margin-bottom: 37px;
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar-nav {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logo {
+    max-width: 126px;
+  }
+  .navbar {
+    padding: 15px 0 15px;
+  }
+  .navbar-collapse {
+    background-color: #363A4D;
+    margin: 0 -12px;
+    padding: 0 40px 0;
+    text-align: center;
+    transform: translate(0, 15px);
+  }
+  .navbar-nav {
+    padding: 37px 0 34px;
+  }
+  .navbar-nav + .btn {
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 295px;
+    padding: 21px 27px;
+    font-size: 16px;
+  }
+  .nav-link {
+    font-size: 24px;
+    line-height: 222%;
+  }
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "ProximaNova";
+  background-color: #282B38;
+  color: #fff;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.btn {
+  font-size: 15px;
+  border-radius: 90px;
+  background-color: #E58D35;
+  border-color: #E58D35;
+  color: #fff;
+  padding: 12px 27px;
+}
+.btn:hover {
+  background-color: transparent;
+  border-color: #E58D35;
+}
+.btn.btn-sm {
+  padding: 12px 18px;
+}
+.btn.btn-lg {
+  font-size: 16px;
+  padding: 20px 18px 19px 35px;
+}
+.btn.btn-lg img {
+  margin-left: 48px;
+}
+.btn.btn-secondary {
+  background-color: transparent;
+}
+.btn.btn-secondary:hover {
+  background-color: #E58D35;
+}
+/*# sourceMappingURL=style.css.map */

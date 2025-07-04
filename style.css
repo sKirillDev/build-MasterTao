@@ -92,7 +92,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 20px;
 }
 .swiper-banner .swiper-slide .container {
   padding-top: 163px;
@@ -117,13 +116,36 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .swiper-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: calc(100% - 59px);
 }
+.swiper-banner .swiper-button-prev,
+.swiper-banner .swiper-button-next {
+  color: #fff;
+  position: static;
+}
+.swiper-banner .swiper-button-prev:hover,
+.swiper-banner .swiper-button-next:hover {
+  color: #89C249;
+}
+.swiper-banner .swiper-button-arows {
+  --padding: 36px;
+  position: absolute;
+  height: 42px;
+  width: 100%;
+  max-width: calc(1522 + var(--padding) * 2);
+  padding: 0 var(--padding);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
 
 .banner-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.26;
   text-transform: uppercase;
-  max-width: 515px;
+  max-width: 470px;
   margin-bottom: 8px;
 }
 
@@ -135,12 +157,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin-bottom: 37px;
 }
 
-@media screen and (max-width: 1199px) {
+@media (min-width: 992px) {
+  .swiper-banner .swiper-slide {
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 1399.99px) {
   .navbar-nav {
     max-width: 540px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199.99px) {
+  .navbar-nav {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 991.99px) {
   .logo {
     max-width: 126px;
   }
@@ -167,6 +199,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
   .nav-link {
     font-size: 24px;
     line-height: 222%;
+  }
+  .swiper-banner .swiper-slide {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 72px);
+  }
+  .swiper-banner .swiper-slide:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(4, 9, 17, 0.6);
+    inset: 0;
+    z-index: -1;
+  }
+  .swiper-banner .swiper-slide .container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .swiper-banner .swiper-slide .banner-title {
+    font-size: 32px;
+  }
+  .swiper-banner .swiper-slide .banner-description {
+    font-size: 16px;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    display: none;
   }
 }
 html {

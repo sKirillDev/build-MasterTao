@@ -43,7 +43,7 @@
                             <a class="nav-link" href="#">Контакты</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Оформить груз</a>
+                            <a class="nav-link" href="#calculation">Оформить груз</a>
                         </li>
                     </ul>
                     <a href="#" class="btn btn-primary">Оставить заявку</a>
@@ -59,7 +59,7 @@
     <a href="#" class="btn btn-secondary">Подробнее</a>
 </div> -->
     <main class="wrapper home">
-        <div class="swiper swiper-banner">
+        <section class="swiper swiper-banner">
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image: url(./assets/img/banner-1.png);">
@@ -98,9 +98,66 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-        </div>
+        </section>
 
 
+        <section id="calculation" class="calculation">
+            <div class="container">
+                <div class="template-title template-title_case-3">
+                    <h2>Получить рассчет стоимости доставки вашего груза</h2>
+                </div>
+                <form class="calculation-form">
+                    <div class="form-row">
+                        <div class="form-column">
+                            <div class="input-box">
+                                <label for="product-category">Категория товара:</label>
+                                <input type="text" id="product-category" placeholder="Категория товара">
+                            </div>
+                            <div class="input-box">
+                                <label for="weight-cargo">Вес груза (кг):</label>
+                                <input type="number" id="weight-cargo" placeholder="Введите вес" inputmode="numeric">
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="input-box">
+                                <label for="cost-cargo">Стоимость груза:</label>
+                                <input type="number" id="cost-cargo" placeholder="Введите стоимость" inputmode="numeric">
+                            </div>
+                            <div class="input-box">
+                                <label for="volume-cargo">Объем груза (м3):</label>
+                                <input type="number" id="volume-cargo" placeholder="Введите объем" inputmode="numeric">
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="input-box input-box_checkbox">
+                                <input type="checkbox" id="insurance">
+                                <label for="insurance">Страховка</label>
+                            </div>
+                            <div class="input-box input-box_checkbox">
+                                <input type="checkbox" id="customs-clearance">
+                                <label for="customs-clearance">Таможенное оформление</label>
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="input-box">
+                                <label for="HS-code">Код ТН ВЭД:</label>
+                                <input type="text" id="HS-code" placeholder="Введите код" inputmode="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-box">
+                            <div id="file-name" class="file-name"></div>
+                            <input id="calculation-file" type="file">
+                            <label for="calculation-file">Загрузить фото товара</label>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg">Следующий шаг <img src="./assets/img/icon-arrow-left.svg"
+                    alt="arrow"></a>
+                </form>
+                <!-- <img src="./assets/img/calculation-person.png" alt="calculation person"> -->
+            </div>
+        </section>
         <section class="advantages">
             <div class="container">
                 <div class="template-title">
@@ -132,3 +189,22 @@
 </body>
 
 </html>
+
+<!-- <div class="container">
+    <div class="template-title">
+        <h2>Готовы к сотрудничеству?</h2>
+        <h3>Зарегистрируйте груз!</h3>
+    </div>
+
+    <div class="template-title">
+        <h2>Готовы к сотрудничеству?</h2>
+    </div>
+
+    <div class="template-title template-title_case-2">
+        <h2>О компании</h2>
+    </div>
+
+    <div class="template-title template-title_case-3">
+        <h2>Получить рассчет стоимости доставки вашего груза</h2>
+    </div>
+</div> -->

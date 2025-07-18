@@ -50,6 +50,10 @@ body {
   color: #fff;
 }
 
+section {
+  margin-bottom: 100px;
+}
+
 .fw-300 {
   font-weight: 300;
 }
@@ -293,6 +297,136 @@ h6 {
   line-height: 1.36;
   max-width: 320px;
   margin-bottom: 37px;
+}
+
+.calculation .template-title {
+  padding-bottom: 52px !important;
+}
+
+.calculation-form {
+  max-width: 626px;
+  background-color: #363A4D;
+  border-radius: 20px;
+  padding: 50px 50px 60px;
+  font-size: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 30px;
+  margin-bottom: 34px;
+}
+.form-row:last-of-type {
+  margin-bottom: 24px;
+}
+
+.form-column {
+  width: calc(50% - 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.input-box_checkbox {
+  padding-left: 32px;
+  padding-top: 2px;
+  margin-bottom: -9px;
+}
+.input-box_checkbox:first-child {
+  margin-top: 20px;
+}
+
+input {
+  background-color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 18px 20px;
+  border: none;
+  transition: 0.3s;
+}
+input:focus-visible {
+  outline: none;
+}
+input:hover {
+  box-shadow: 0px 0px 3px 2px rgba(229, 141, 53, 0.6);
+}
+input:focus {
+  box-shadow: 0px 0px 3px 2px rgba(137, 194, 73, 0.6);
+}
+input:active {
+  box-shadow: 0px 0px 3px 2px #89C249;
+}
+input[type=file] {
+  display: none;
+}
+input[type=file] + label {
+  text-align: center;
+  padding: 12px 12px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23fff' stroke-width='1' stroke-dasharray='3%2c 6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-position: center;
+  background-size: calc(100% - 1px) calc(100% - 1px);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 2px;
+}
+input[type=file] + label:hover {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%2389C24999' stroke-width='2' stroke-dasharray='3%2c 6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+input::placeholder {
+  color: #CBCBCB;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] + label:hover::before {
+  border-color: #E58D35;
+}
+
+label {
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+input[type=checkbox] + label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #282B38;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "";
+  background: url(./assets/img/icon-checked.svg) center no-repeat #fff;
+}
+
+.file-name {
+  margin-bottom: 12px;
 }
 
 @media (min-width: 992px) {

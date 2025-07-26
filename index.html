@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#89C249">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <link rel="icon" href="./assets/img/favicon.svg">
     <title>MasterTao</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/hamburgers.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/nice-select2.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -111,7 +113,11 @@
                         <div class="form-column">
                             <div class="input-box">
                                 <label for="product-category">Категория товара:</label>
-                                <input type="text" id="product-category" placeholder="Категория товара">
+                                <select id="product-category">
+                                    <option value="1">Легкий</option>
+                                    <option value="2">Середній</option>
+                                    <option value="3">Важкий</option>
+                                </select>
                             </div>
                             <div class="input-box">
                                 <label for="weight-cargo">Вес груза (кг):</label>
@@ -147,15 +153,14 @@
                     </div>
                     <div class="form-row">
                         <div class="input-box">
-                            <div id="file-name" class="file-name"></div>
+                            <div class="file-name" class="file-name"></div>
                             <input id="calculation-file" type="file">
                             <label for="calculation-file">Загрузить фото товара</label>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary btn-lg">Следующий шаг <img src="./assets/img/icon-arrow-left.svg"
-                    alt="arrow"></a>
+                    <a href="#" class="btn btn-primary btn-lg">Следующий шаг <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
                 </form>
-                <!-- <img src="./assets/img/calculation-person.png" alt="calculation person"> -->
+                <img src="./assets/img/calculation-person.png" class="calculation-img" alt="calculation-person">
             </div>
         </section>
         <section class="advantages">
@@ -185,6 +190,7 @@
     </footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/nice-select2.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 

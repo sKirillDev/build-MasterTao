@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#89C249">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
     <link rel="icon" href="./assets/img/favicon.svg">
     <title>MasterTao</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/hamburgers.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/nice-select2.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/nice-select2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -33,10 +33,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav w-100 justify-content-between mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Цены и сроки</a>
+                            <a class="nav-link" aria-current="page" href="#delivery">Цены и сроки</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Услуги</a>
+                            <a class="nav-link" href="#services">Услуги</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">О компании</a>
@@ -53,13 +53,6 @@
             </div>
         </nav>
     </header>
-
-    <!-- <div class="container">
-    <a href="#" class="btn btn-primary">Оставить заявку</a>
-    <a href="#" class="btn btn-primary btn-sm">Оставить заявку</a>
-    <a href="#" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
-    <a href="#" class="btn btn-secondary">Подробнее</a>
-</div> -->
     <main class="wrapper home">
         <section class="swiper swiper-banner">
 
@@ -68,28 +61,28 @@
                     <div class="container">
                         <h2 class="banner-title">Прямое КАРГО из Китая</h2>
                         <h5 class="banner-description">Доставляем любые грузы из Китая по честной цене</h5>
-                        <a href="#" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
+                        <a href="#calculation" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
                     </div>
                 </div>
                 <div class="swiper-slide" style="background-image: url(./assets/img/banner-2.png);">
                     <div class="container">
                         <h2 class="banner-title">Аренда склада</h2>
                         <h5 class="banner-description">Доставляем любые грузы из Китая по честной цене</h5>
-                        <a href="#" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
+                        <a href="#calculation" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
                     </div>
                 </div>
                 <div class="swiper-slide" style="background-image: url(./assets/img/banner-3.png);">
                     <div class="container">
                         <h2 class="banner-title">Выкуп товара с ТаоБао, 1688</h2>
                         <h5 class="banner-description">Выкуп и доставка товаров с китайских торговых площадок. </h5>
-                        <a href="#" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
+                        <a href="#calculation" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
                     </div>
                 </div>
                 <div class="swiper-slide" style="background-image: url(./assets/img/banner-4.png);">
                     <div class="container">
                         <h2 class="banner-title">Экспресс авто доставка</h2>
                         <h5 class="banner-description">Доставляем любые грузы из Китая по честной цене</h5>
-                        <a href="#" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
+                        <a href="#calculation" class="btn btn-primary btn-lg">Рассчитать стоимость <img src="./assets/img/icon-arrow-left.svg" alt="arrow"></a>
                     </div>
                 </div>
             </div>
@@ -121,17 +114,17 @@
                             </div>
                             <div class="input-box">
                                 <label for="weight-cargo">Вес груза (кг):</label>
-                                <input type="number" id="weight-cargo" placeholder="Введите вес" inputmode="numeric">
+                                <input type="number" id="weight-cargo" placeholder="Введите вес">
                             </div>
                         </div>
                         <div class="form-column">
                             <div class="input-box">
                                 <label for="cost-cargo">Стоимость груза:</label>
-                                <input type="number" id="cost-cargo" placeholder="Введите стоимость" inputmode="numeric">
+                                <input type="number" id="cost-cargo" placeholder="Введите стоимость">
                             </div>
                             <div class="input-box">
                                 <label for="volume-cargo">Объем груза (м3):</label>
-                                <input type="number" id="volume-cargo" placeholder="Введите объем" inputmode="numeric">
+                                <input type="number" id="volume-cargo" placeholder="Введите объем">
                             </div>
                         </div>
                         <div class="form-column">
@@ -147,13 +140,13 @@
                         <div class="form-column">
                             <div class="input-box">
                                 <label for="HS-code">Код ТН ВЭД:</label>
-                                <input type="text" id="HS-code" placeholder="Введите код" inputmode="text">
+                                <input type="text" id="HS-code" placeholder="Введите код">
                             </div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="input-box">
-                            <div class="file-name" class="file-name"></div>
+                            <div class="file-name"></div>
                             <input id="calculation-file" type="file">
                             <label for="calculation-file">Загрузить фото товара</label>
                         </div>
@@ -163,27 +156,314 @@
                 <img src="./assets/img/calculation-person.png" class="calculation-img" alt="calculation-person">
             </div>
         </section>
-        <section class="advantages">
+        <section class="advantages bg-accent">
             <div class="container">
                 <div class="template-title">
                     <h2>Почему стоит выбрать именно нас?</h2>
                 </div>
+                <div id="advantages" class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/advantage-1.svg" alt="advantage__img">
+                                </div>
+                                <h6 class="advantage__title">Таможенное оформление груза</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/advantage-2.svg" alt="advantage__img">
+                                </div>
+                                <h6 class="advantage__title">Страховка груза</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/advantage-3.svg" alt="advantage__img">
+                                </div>
+                                <h6 class="advantage__title">Проверка товара на брак</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/advantage-4.svg" alt="advantage__img">
+                                </div>
+                                <h6 class="advantage__title">Доставка в любой город Украины</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/advantage-5.svg" alt="advantage__img">
+                                </div>
+                                <h6 class="advantage__title">Консолидация на складе</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/advantage-6.svg" alt="advantage__img">
+                                </div>
+                                <h6 class="advantage__title">Ответственное хранение груза</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/advantage-7.svg" alt="advantage__img">
+                                </div>
+                                <h6 class="advantage__title">Помощь воплате товара</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/advantage-8.svg" alt="advantage__img">
+                                </div>
+                                <h6 class="advantage__title">Упаковка, переупаковка, паллетирование груза</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
-        <section class="delivery">
+        <section id="delivery" class="delivery">
             <div class="container">
                 <div class="template-title">
                     <h2>Варианты доставки грузов из Китая</h2>
                 </div>
+                <div class="template-carousel">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__img-box" role="img" aria-label="Description of the overall image">
+                                        <img src="./assets/img/delivery-1.png" class="card-img-top" alt="card__img">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Авто - обычная</h5>
+                                        <ul class="card__options-list">
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-calendar.svg" alt="calendar">9-15 дней
+                                            </li>
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-box.svg" alt="box">от 5 кг
+                                            </li>
+                                        </ul>
+                                        <div class="card__price">
+                                            <span>от</span>
+                                            <strong>1,5</strong>
+                                            <span>$/кг</span>
+                                        </div>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-primary">Оставить заявку</a>
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__img-box" role="img" aria-label="Description of the overall image">
+                                        <img src="./assets/img/delivery-2.png" class="card-img-top" alt="card__img">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Авто - ускоренная</h5>
+                                        <ul class="card__options-list">
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-calendar.svg" alt="calendar">9-15 дней
+                                            </li>
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-box.svg" alt="box">от 5 кг
+                                            </li>
+                                        </ul>
+                                        <div class="card__price">
+                                            <span>от</span>
+                                            <strong>2,5</strong>
+                                            <span>$/кг</span>
+                                        </div>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-primary">Оставить заявку</a>
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__img-box" role="img" aria-label="Description of the overall image">
+                                        <img src="./assets/img/delivery-3.png" class="card-img-top" alt="card__img">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Авиа</h5>
+                                        <ul class="card__options-list">
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-calendar.svg" alt="calendar">9-15 дней
+                                            </li>
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-box.svg" alt="box">от 5 кг
+                                            </li>
+                                        </ul>
+                                        <div class="card__price">
+                                            <span>от</span>
+                                            <strong>3,5</strong>
+                                            <span>$/кг</span>
+                                        </div>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-primary">Оставить заявку</a>
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__img-box" role="img" aria-label="Description of the overall image">
+                                        <img src="./assets/img/delivery-4.png" class="card-img-top" alt="card__img">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ж/д</h5>
+                                        <ul class="card__options-list">
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-calendar.svg" alt="calendar">9-15 дней
+                                            </li>
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-box.svg" alt="box">от 5 кг
+                                            </li>
+                                        </ul>
+                                        <div class="card__price">
+                                            <span>от</span>
+                                            <strong>2,5</strong>
+                                            <span>$/кг</span>
+                                        </div>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-primary">Оставить заявку</a>
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__img-box" role="img" aria-label="Description of the overall image">
+                                        <img src="./assets/img/delivery-5.png" class="card-img-top" alt="card__img">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Море</h5>
+                                        <ul class="card__options-list">
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-calendar.svg" alt="calendar">9-15 дней
+                                            </li>
+                                            <li class="card__options-item">
+                                                <img src="./assets/img/icon-box.svg" alt="box">от 5 кг
+                                            </li>
+                                        </ul>
+                                        <div class="card__price">
+                                            <span>от</span>
+                                            <strong>4,5</strong>
+                                            <span>$/кг</span>
+                                        </div>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-primary">Оставить заявку</a>
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-arrow-container">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="services">
+        <section id="services" class="services bg-accent">
             <div class="container">
                 <div class="template-title">
                     <h2>Услуги</h2>
                 </div>
+                <div class="template-carousel">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card card_services" style="background-image: url(./assets/img/services-1.png);">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Выкуп товара</h5>
+                                        <p class="card-text">Компания - это полный комплекс логистических услуг по доставке
+                                            грузов из Китая в Украину - сборные грузы и цельные товарные партии, услуги
+                                            посредника ТаоБао, КАРГО Китай-Украина.
+                                        </p>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card card_services" style="background-image: url(./assets/img/services-2.png);">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Страховка груза</h5>
+                                        <p class="card-text">Компания - это полный комплекс логистических услуг по доставке
+                                            грузов из Китая в Украину - сборные грузы и цельные товарные партии, услуги
+                                            посредника ТаоБао, КАРГО Китай-Украина.
+                                        </p>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card card_services" style="background-image: url(./assets/img/services-3.png);">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Аренда склада</h5>
+                                        <p class="card-text">Компания - это полный комплекс логистических услуг по доставке
+                                            грузов из Китая в Украину - сборные грузы и цельные товарные партии, услуги
+                                            посредника ТаоБао, КАРГО Китай-Украина.
+                                        </p>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card card_services" style="background-image: url(./assets/img/services-4.png);">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Оплата груза</h5>
+                                        <p class="card-text">Компания - это полный комплекс логистических услуг по доставке
+                                            грузов из Китая в Украину - сборные грузы и цельные товарные партии, услуги
+                                            посредника ТаоБао, КАРГО Китай-Украина.
+                                        </p>
+                                        <div class="card__btn-row">
+                                            <a href="#" class="btn btn-sm btn-secondary">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-arrow-container">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
         </section>
+
+
     </main>
     <footer>
         Footer
@@ -195,22 +475,3 @@
 </body>
 
 </html>
-
-<!-- <div class="container">
-    <div class="template-title">
-        <h2>Готовы к сотрудничеству?</h2>
-        <h3>Зарегистрируйте груз!</h3>
-    </div>
-
-    <div class="template-title">
-        <h2>Готовы к сотрудничеству?</h2>
-    </div>
-
-    <div class="template-title template-title_case-2">
-        <h2>О компании</h2>
-    </div>
-
-    <div class="template-title template-title_case-3">
-        <h2>Получить рассчет стоимости доставки вашего груза</h2>
-    </div>
-</div> -->

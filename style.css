@@ -611,7 +611,7 @@ input[type=checkbox]:checked + label:before, textarea[type=checkbox]:checked + l
   border-radius: 20px;
   background-color: #363A4D;
   text-align: center;
-  width: 360px;
+  max-width: 360px;
   border: none;
 }
 .card__img-box {
@@ -656,6 +656,7 @@ input[type=checkbox]:checked + label:before, textarea[type=checkbox]:checked + l
 }
 .card__btn-row .btn {
   width: 50%;
+  padding: 12px 12px;
 }
 .card.card_services {
   position: relative;
@@ -779,6 +780,66 @@ input[type=checkbox]:checked + label:before, textarea[type=checkbox]:checked + l
   max-width: 100%;
 }
 
+.footer hr {
+  height: 2px;
+  margin: 0 0 40px 0;
+  height: 2px;
+  background-color: #E58D35;
+  opacity: initial;
+}
+.footer address {
+  margin-bottom: 70px;
+}
+.footer .footer__row {
+  display: flex;
+  gap: 90px;
+}
+.footer .footer__column {
+  max-width: 264px;
+  font-size: 16px;
+}
+.footer .footer__column ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer .footer__column ul li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+.footer .footer__column h4 {
+  margin-bottom: 14px;
+}
+.footer .footer__column_contacts ul li {
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+.footer .footer__column_contacts ul li .email {
+  text-decoration: underline;
+}
+.footer .footer__column_contacts ul li:last-child {
+  margin-bottom: 19px;
+}
+.footer .footer__column_contacts a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer a {
+  color: #85899C;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
+}
+.footer a:hover {
+  color: #E58D35;
+}
+.footer .logo {
+  margin-bottom: 28px;
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+}
+
 @media (min-width: 992px) {
   .swiper-banner {
     width: calc(100% - 24px);
@@ -813,6 +874,9 @@ input[type=checkbox]:checked + label:before, textarea[type=checkbox]:checked + l
   }
   .bg-accent:before {
     inset: 0 12px;
+  }
+  .footer .footer__row {
+    gap: 50px;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -969,6 +1033,18 @@ input[type=checkbox]:checked + label:before, textarea[type=checkbox]:checked + l
   }
   .order-mobile-negative {
     order: -1;
+  }
+  .footer .footer__row {
+    justify-content: center;
+  }
+  .footer .footer__row .footer__column:not(.footer__column_contacts) {
+    display: none;
+  }
+  .footer .footer__row .footer__column_contacts {
+    text-align: center;
+  }
+  .footer .footer__row .footer__column_contacts .social {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 767.98px) {
